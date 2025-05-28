@@ -86,6 +86,44 @@ index 2a32547..b1a7752 100644
  }
 ```
 
+A Test Based On MongoDB
+-----------------------
+
+- src/test/java/com/example/SimpleMongoWriterTest.java
+
+```sh
+$ OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :test
+
+SimpleMongoWriterTest > createCollectionAndCount(MongoTemplate) PASSED
+
+SimpleMongoWriterTest > createCollectionAndWrite(MongoTemplate) PASSED
+
+UliBeanTest > testUliBean() PASSED
+
+BUILD SUCCESSFUL in 4s
+5 actionable tasks: 5 executed
+```
+
+Note: The test works OK only
+
+- if the mongodb instance is not running
+- if the mongodb database storage area is empty (`rm -rf mongodb-dir` - otherwise createCollectionAndWrite() fails with
+  expected: 1L but was: 2L)
+
+Examining The MongoDB
+---------------------
+
+- Download and install mongodb-linux-x86_64-ubuntu2404-8.0.9.tgz
+- Start it by executing `.../mongod --dbpath "$(pwd)/mongodb-dir"`
+- Download and install mongodb-compass-1.46.0-linux-x64.tar.gz
+- Start it by executing `.../MongoDB\ Compass --no-sandbox`
+- Connect to the default db localhost:27017
+- The collections are located underneath "test"
+  - deleteMe
+  - myCollection
+
 Links
 -----
 
