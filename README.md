@@ -50,6 +50,22 @@ Secret: SECRET!
 Creating JUnit Tests
 --------------------
 
+- build.gradle
+- src/test/java/com/example/UliBeanTest.java
+
+Now we see:
+
+```sh
+$ ./gradlew test
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :test
+
+UliBeanTest > testUliBean() PASSED
+
+BUILD SUCCESSFUL in 2s
+5 actionable tasks: 5 executed
+```
 
 Transformation To MongoDB Project
 ---------------------------------
