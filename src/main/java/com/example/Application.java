@@ -1,9 +1,12 @@
+package com.example;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-class Main {
-    public static void main(String[] args) {
+class Application {
+    public static void main(final String[] args) {
         System.out.println("Hello, World!"); 
+	    SpringApplication.run(Application.class, args);
     }
 }

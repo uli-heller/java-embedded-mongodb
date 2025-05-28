@@ -13,8 +13,23 @@ A simple gradle project - copied from
 ```
 ./gradlew wrapper --gradle-version latest
 ./gradlew wrapper --gradle-version latest
-./gradlew build
+./gradlew --console=plain build
 ```
+
+Using Some Spring Mechanisms
+----------------------------
+
+- src/main/java/Main.java -> src/main/java/com/example/Application.java
+- src/main/java/com/example/Main.java
+- src/main/java/com/example/UliBean.java
+- src/main/java/com/example/UliBeanImpl.java
+- src/main/resources/application.properties (to activate debugging)
+- src/main/resources/logback-spring.xml (to log into a file)
+- build.gradle
+
+Creating JUnit Tests
+--------------------
+
 
 Transformation To MongoDB Project
 ---------------------------------
