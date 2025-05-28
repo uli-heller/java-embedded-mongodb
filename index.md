@@ -1,7 +1,7 @@
 Springboot Hello World
 ======================
 
-Verzeichnisinhalt:
+Contents:
 
 - build.gradle
 - .gitignore
@@ -12,6 +12,7 @@ Verzeichnisinhalt:
 - gradle/wrapper/gradle-wrapper.jar
 - gradle/wrapper/gradle-wrapper.properties
 - index.md
+- README.md
 - settings.gradle
 - src
 - src/main
