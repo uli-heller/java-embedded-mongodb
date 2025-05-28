@@ -10,6 +10,12 @@ Starting Point
 A simple gradle project - copied from
 [Github - java-example-springboot-hello-world](https://github.com/uli-heller/java-example-springboot-hello-world).
 
+```
+./gradlew wrapper --gradle-version latest
+./gradlew wrapper --gradle-version latest
+./gradlew build
+```
+
 Links
 -----
 
