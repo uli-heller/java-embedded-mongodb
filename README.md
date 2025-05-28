@@ -27,6 +27,26 @@ Using Some Spring Mechanisms
 - src/main/resources/logback-spring.xml (to log into a file)
 - build.gradle
 
+Now we see this:
+
+```sh
+$ ./gradlew build
+$ java -jar build/libs/java-embedded-mongodb-0.0.1-SNAPSHOT.jar
+Hello, World!
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.6)
+
+Main - main: Hello, World!
+Secret: SECRET!
+```
+
 Creating JUnit Tests
 --------------------
 
