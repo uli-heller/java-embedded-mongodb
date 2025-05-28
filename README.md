@@ -16,6 +16,25 @@ A simple gradle project - copied from
 ./gradlew build
 ```
 
+Transformation To MongoDB Project
+---------------------------------
+
+build.gradle:
+
+```diff
+diff --git a/build.gradle b/build.gradle
+index 2a32547..b1a7752 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -21,4 +21,6 @@ repositories {
+ 
+ dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter-web'
++       implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
++       testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring3x:4.20.0'
+ }
+```
+
 Links
 -----
 
